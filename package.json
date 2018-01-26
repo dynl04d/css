@@ -1,18 +1,18 @@
 {
-    "name": "hacker-bootstrap-tilde",
+    "name": "tildeteam-css",
     "version": "1.0.0",
-    "description": "a fork of brobin's h4x0r bootstrap theme",
+    "description": "a fork of brobin's h4x0r bootstrap theme, used by tilde.team",
     "author": "Ben Harris <ben@tilde.team>",
     "scripts": {
         "build": "lessc less/hacker.less dist/hacker.css --clean-css=\"--s1 --advanced --compatibility=ie8\"",
-        "cp": "cp dist/hacker.css /var/www/html/tilde.team/public_html/css/."
+        "cp": "scp dist/hacker.css ben@tilde.team:/var/www/html/tilde.team/public_html/css/."
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/tilde-team/hacker-bootstrap"
+        "url": "https://github.com/tilde-team/css"
     },
     "bugs": {
-        "url": "https://github.com/tilde-team/hacker-bootstrap/issues"
+        "url": "https://github.com/tilde-team/css/issues"
     },
     "dependencies": {
         "@ibm/type": "^0.5.3",
