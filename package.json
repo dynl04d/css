@@ -16,9 +16,7 @@
     },
     "dependencies": {
         "@ibm/type": "^0.5.3",
-        "bootstrap": "3.3.7",
-        "less": "2.7.3",
-        "less-plugin-clean-css": "1.5.1"
+        "bootstrap": "^4.0.0"
     },
     "preferGlobal": true,
     "license": "MIT"
