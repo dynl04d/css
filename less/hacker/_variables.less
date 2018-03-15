@@ -6,7 +6,7 @@ by Tobin Brown, 2015
 
 // Hacker Colors
 @hacker: #00ff00;
-@hacker-bg: #131313;
+@hacker-bg: #111111;
 
 
 // Grays (acutally greens, so yeah, gg)
@@ -80,8 +80,8 @@ by Tobin Brown, 2015
 // Buttons
 @btn-font-weight:           normal;
 @btn-default-color:         @hacker;
-@btn-default-bg:            @hacker-bg;
-@btn-default-border:        #111111;
+@btn-default-bg:            lighten(@hacker-bg, 10%);
+@btn-default-border:        #000000;
 @btn-primary-color:         @hacker-bg;
 @btn-primary-bg:            @brand-primary;
 @btn-primary-border:        @btn-default-border;
@@ -331,5 +331,5 @@ by Tobin Brown, 2015
 // Labels
 @label-color:   @hacker-bg;
 
-@hr-border: lighten(@hacker-bg, 10%);
+@hr-border: #000000;
 
