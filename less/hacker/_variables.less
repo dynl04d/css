@@ -1,20 +1,27 @@
 /*
 A Bootstrap theme for 31337 H4X0RS
 by Tobin Brown, 2015
+forked by benharri for tilde.team
+Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 */
 
+@color-primary: #195C2B;  /* Main Primary color */
+@color-primary-1: #1D4327;
+@color-primary-2: #1C532A;
+@color-primary-3: #21823B;
+@color-primary-4: #2BB04E;
 
 // Hacker Colors
-@hacker: #00ff00;
-@hacker-bg: #111111;
+@hacker: @color-primary;
+@hacker-bg: #000000;
 
 
 // Grays (acutally greens, so yeah, gg)
-@gray-darker:   @hacker;
-@gray-dark:     darken(@hacker, 10%);
-@gray:          darken(@hacker, 20%);
-@gray-light:    darken(@hacker, 40%);
-@gray-lighter:  darken(@hacker, 40%);
+@gray-darker:   #2F4F4F;
+@gray-dark:     #708090;
+@gray:          #696969;
+@gray-light:    #808080;
+@gray-lighter:  #A9A9A9;
 
 
 // Brand Colors
@@ -27,8 +34,8 @@ by Tobin Brown, 2015
 
 // Scaffolding
 @body-bg:                   @hacker-bg;
-@text-color:                @gray-dark;
-@link-color:                lighten(@brand-primary, 20%);
+@text-color:                @color-primary-4;
+@link-color:                @color-primary-2;
 @link-hover-color:          lighten(@link-color, 10%);
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   12px;
@@ -45,9 +52,9 @@ by Tobin Brown, 2015
 
 
 // Typography
-@font-family-sans-serif:    "IBM Plex Mono";
-@font-family-serif:         "IBM Plex Mono";
-@font-family-monospace:     "IBM Plex Mono";
+@font-family-sans-serif:    "IBM Plex Mono", monospace;
+@font-family-serif:         "IBM Plex Mono", monospace;
+@font-family-monospace:     "IBM Plex Mono", monospace;
 @font-family-base:          @font-family-monospace;
 @font-size-base:            16px;
 @font-size-large:           ceil(@font-size-base * 1.25);
@@ -68,13 +75,13 @@ by Tobin Brown, 2015
 // code
 
 @code-color:                @brand-primary;
-@code-bg:                   lighten(@hacker-bg, 10%);
+@code-bg:                   @gray-darker;
 
 @kbd-color:                 @brand-primary;
-@kbd-bg:                    lighten(@hacker-bg, 20%);
+@kbd-bg:                    @gray;
 
 @pre-color:                 @brand-primary;
-@pre-bg:                    lighten(@hacker-bg, 15%);
+@pre-bg:                    @gray-dark;
 
 
 // Buttons
@@ -120,9 +127,9 @@ by Tobin Brown, 2015
 
 
 // Forms
-@input-bg:                          darken(@hacker-bg, 20%);
+@input-bg:                          @gray-darker;
 @input-bg-disabled:                 @gray-lighter;
-@input-color:                       @gray;
+@input-color:                       @color-primary-2;
 @input-border:                      #444444;
 @input-border-focus:                @hacker;
 @input-border-radius:               @border-radius-base;
