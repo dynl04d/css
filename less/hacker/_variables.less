@@ -26,15 +26,15 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 // Brand Colors
 @brand-primary: @hacker;
-@brand-success: @gray;
-@brand-warning: #f4ff00;
-@brand-danger:  #ff0000;
-@brand-info:    #3366CC;
+@brand-success: @color-primary-1;
+@brand-warning: @color-primary-2;
+@brand-danger:  @color-primary-3;
+@brand-info:    @color-primary-4;
 
 
 // Scaffolding
 @body-bg:                   @hacker-bg;
-@text-color:                @color-primary-4;
+@text-color:                @color-primary;
 @link-color:                @color-primary-2;
 @link-hover-color:          lighten(@link-color, 10%);
 @padding-base-vertical:     6px;
@@ -74,14 +74,14 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 // code
 
-@code-color:                @brand-primary;
+@code-color:                @color-primary-4;
 @code-bg:                   @gray-darker;
 
-@kbd-color:                 @brand-primary;
-@kbd-bg:                    @gray;
+@kbd-color:                 @color-primary-4;
+@kbd-bg:                    @gray-darker;
 
-@pre-color:                 @brand-primary;
-@pre-bg:                    @gray-dark;
+@pre-color:                 @color-primary-4;
+@pre-bg:                    @gray-darker;
 
 
 // Buttons
@@ -108,7 +108,7 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 
 // Well
-@well-bg:                     darken(@hacker-bg, 10%);
+@well-bg:                     lighten(@hacker-bg, 10%);
 @well-border:                 darken(@well-bg, 7%);
 
 
@@ -127,13 +127,13 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 
 // Forms
-@input-bg:                          @gray-darker;
+@input-bg:                          @hacker-bg;
 @input-bg-disabled:                 @gray-lighter;
 @input-color:                       @color-primary-2;
 @input-border:                      #444444;
 @input-border-focus:                @hacker;
 @input-border-radius:               @border-radius-base;
-@input-color-placeholder:           darken(@hacker, 30%);
+@input-color-placeholder:           @hacker;
 @input-height-base:                 (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:                (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:                (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
@@ -234,7 +234,7 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 // Jumbotron
 @jumbotron-padding: 30px;
 @jumbotron-color: inherit;
-@jumbotron-bg: darken(@hacker-bg, 10%);
+@jumbotron-bg: lighten(@hacker-bg, 10%);
 @jumbotron-font-size: ceil((@font-size-base * 1.5));
 
 
@@ -298,12 +298,12 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 
 // List Group
-@list-group-bg:                 lighten(@hacker-bg, 10%);
+@list-group-bg:                 lighten(@hacker-bg, 5%);
 @list-group-border:             #222222;
 @list-group-border-radius:      @border-radius-base;
-@list-group-hover-bg:           darken(@hacker-bg, 5%);
+@list-group-hover-bg:           lighten(@hacker-bg, 10%);
 @list-group-active-color:       @hacker-bg;
-@list-group-active-bg:          @hacker;
+@list-group-active-bg:          lighten(@hacker-bg, 5%);
 @list-group-active-border:      @list-group-active-bg;
 @list-group-active-text-color:  @hacker-bg;
 @list-group-link-color:         @hacker;
