@@ -6,7 +6,7 @@
     "scripts": {
         "build": "lessc less/hacker.less dist/hacker.css --clean-css=\"--s1 --advanced --compatibility=ie8\"",
         "deploy": "scp dist/hacker.css ben@tilde.team:/var/www/html/tilde.team/public_html/css/.",
-        "dev": "light-server -s . -p 9000 -w \"index.html, **/*.less\" -o"
+        "dev": "light-server -s . -p 9000 -w \"index.html, **/*.less # npm run build\" -o"
     },
     "repository": {
         "type": "git",
