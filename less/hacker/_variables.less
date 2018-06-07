@@ -15,9 +15,8 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 @hacker:                 @hacker-primary-light;       /* Body text */
 @hacker-bg:              #000000;                     /* Body bg */
-@hacker-box-bg:          lighten(@hacker-bg, 10%);    /* Boxed elem bg */
-@hacker-box-border:      lighten(@hacker-bg, 20%);    /* Boxed elem border */
-@hacker-headings:        @hacker-primary-lighter;     /* Headings */
+@hacker-box-bg:          lighten(@hacker-bg, 10%);    /* Container elem bg */
+@hacker-box-border:      lighten(@hacker-bg, 20%);    /* Container border */
 
 
 // Bootstrap Colors
@@ -50,7 +49,8 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @border-radius-small:       0;
 @line-height-large:         1.33;
 @line-height-small:         1.5;
-@component-active-bg:       @hacker-primary;
+@component-active-color:    @hacker-bg;
+@component-active-bg:       @hacker-primary-lighter;
 
 
 // Typography
@@ -118,29 +118,31 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 // Dropdowns
 @dropdown-bg:                   @hacker-box-bg;
 @dropdown-border:               @hacker-box-border;
-@dropdown-divider-bg:           #333333;
-@dropdown-link-active-color:    @hacker-bg;
+@dropdown-divider-bg:           @hacker-box-border;
+@dropdown-link-active-color:    @component-active-color;
 @dropdown-link-active-bg:       @component-active-bg;
-@dropdown-link-color:           @gray-dark;
-@dropdown-link-hover-color:     @hacker-bg;
-@dropdown-link-hover-bg:        @dropdown-link-active-bg;
+@dropdown-link-color:           @hacker-primary-light;
+@dropdown-link-hover-color:     @link-hover-color;
+@dropdown-link-hover-bg:        @gray-darker;
 @dropdown-link-disabled-color:  @gray-light;
-@dropdown-header-color:         lighten(@hacker-bg, 50%);
+@dropdown-header-color:         @headings-color;
 @dropdown-caret-color:          #000000;
+// Custom colors
+@dropdown-header-bg:            lighten(@dropdown-bg, 10%);
 
 
 // Forms
 @input-bg:                          @hacker-bg;
 @input-bg-disabled:                 lighten(@hacker-bg, 20%);
 @input-color:                       @hacker;
-@input-border:                      #444444;
-@input-border-focus:                @hacker;
+@input-border:                      @hacker-box-border;
+@input-border-focus:                @component-active-bg;
 @input-border-radius:               @border-radius-base;
 @input-color-placeholder:           @hacker;
 @input-height-base:                 (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:                (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:                (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
-@legend-color:                      @hacker-headings;
+@legend-color:                      @headings-color;
 @legend-border-color:               @hacker-box-border;
 @input-group-addon-bg:              @hacker-bg;
 @input-group-addon-border-color:    @input-border;
@@ -167,20 +169,20 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @navbar-height:                         50px;
 @navbar-margin-bottom:                  @line-height-computed;
 @navbar-default-color:                  @hacker;
-@navbar-default-bg:                     darken(@hacker-bg, 10%);
-@navbar-default-border:                 darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                     @hacker-bg;
+@navbar-default-border:                 @hacker-bg;
 @navbar-border-radius:                  @border-radius-base;
 @navbar-padding-horizontal:             floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:               ((@navbar-height - @line-height-computed) / 2);
-@navbar-default-link-color:             @hacker;
-@navbar-default-link-hover-color:       darken(@hacker, 20%);
+@navbar-default-link-color:             @link-color;
+@navbar-default-link-hover-color:       @link-hover-color;
 @navbar-default-link-hover-bg:          @hacker-bg;
-@navbar-default-link-active-color:      #999999;
-@navbar-default-link-active-bg:         darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color:      @hacker-bg;
+@navbar-default-link-active-bg:         @hacker-primary-lighter;
 @navbar-default-link-disabled-color:    #CCCCCC;
 @navbar-default-link-disabled-bg:       transparent;
 @navbar-default-brand-color:            @navbar-default-link-color;
-@navbar-default-brand-hover-color:      darken(@navbar-default-link-color, 10%);
+@navbar-default-brand-hover-color:       lighten(@navbar-default-link-color, 10%);
 @navbar-default-brand-hover-bg:         transparent;
 @navbar-default-toggle-hover-bg:        #DDDDDD;
 @navbar-default-toggle-icon-bar-bg:     #888888;
@@ -195,13 +197,13 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @nav-tabs-border-color:                         #444444;
 @nav-tabs-link-hover-border-color:              #444444;
 @nav-tabs-active-link-hover-bg:                 @hacker-primary-lighter;
-@nav-tabs-active-link-hover-color:              #000000;
-@nav-tabs-active-link-hover-border-color:       #222222;
+@nav-tabs-active-link-hover-color:              @hacker-bg;
+@nav-tabs-active-link-hover-border-color:       #444444;
 @nav-tabs-justified-link-border-color:          #DDDDDD;
 @nav-tabs-justified-active-link-border-color:   @body-bg;
 @nav-pills-border-radius:                       @border-radius-base;
 @nav-pills-active-link-hover-bg:                @component-active-bg;
-@nav-pills-active-link-hover-color:             #FFFFFF;
+@nav-pills-active-link-hover-color:             @component-active-color;
 
 
 // Panel
@@ -253,8 +255,8 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @pagination-hover-bg:           @gray-darker;
 @pagination-hover-color:        @link-hover-color;
 @pagination-hover-border:       @pagination-border;
-@pagination-active-bg:          @hacker-primary-lighter;
-@pagination-active-color:       @hacker-bg;
+@pagination-active-bg:          @component-active-bg;
+@pagination-active-color:       @component-active-color;
 @pagination-active-border:      @pagination-border;
 @pagination-disabled-color:     @hacker-primary;
 @pagination-disabled-bg:        @pagination-bg;
@@ -359,4 +361,4 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @label-color:   @hacker-bg;
 
 // hr
-@hr-border: @gray;
+@hr-border: lighten(@hacker-bg, 20%);
