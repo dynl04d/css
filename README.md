@@ -1,57 +1,60 @@
-# Tilde Team Hacker Bootstrap Theme
+# tilde team hacker bootstrap theme
 
-The latest compiled CSS will be available [here](https://tilde.team/css/hacker.css)
+this is a fork of [brobin's hacker bootstrap](https://github.com/brobin/hacker-bootstrap)
 
-The major changes from the original are a few tweaks to colors of code samples and font sizes.
+the latest compiled css will be available [here](https://tilde.team/css/hacker.css)
 
-Feel free to use and modify as you like!
+the major changes from the original are a few tweaks to colors of code samples and font sizes.
+
+feel free to use and modify as you like!
 
 
-This is the style used on [tilde.team](https://tilde.team).
-
-
----
-
-Original README from [brobin](https://github.com/Brobin/hacker-bootstrap)
-
+this is the style used on [tilde.team](https://tilde.team).
 
 ![](haxor.png)
 
+a bootstrap theme for 1337 h4x0rs. inspired by the classic green on black terminal style. this theme will make your website 1337.
 
-A Bootstrap theme for 1337 h4x0rs. Inspired by the classic green on black terminal style. This theme will make your website 1337.
-
-Check out the [example site](http://brobin.github.io/hacker-bootstrap/)!
+check out the [example site](https://tilde-team.github.io/css/)!
 
 
-## Usage
+## usage
 
-You can pick up the latest [hacker.css](http://brobin.github.io/hacker-bootstrap/css/hacker.css) and reference the css in your page.
+you can pick up the latest [hacker.css](https://tilde.team/css/hacker.css) and reference the css in your page.
 
 ```html
 <link href="css/hacker.css" rel="stylesheet">
 ```
 
-**Or** you could be a real h4x0r.
+**or** you could be a real h4x0r.
 
-**H4X0RS ONLY**
+**h4x0rs only**
 
-Make sure you have bootstrap and less installed (they're listed as dependencies in `package.json`). Open up your h4x0r terminal and type the following:
+open up your h4x0r terminal and type the following:
 
 ```bash
 $ npm install
 ```
-Then compile by using the 1337 compile script:
 
+if you want to make adjustments with live-reloading, try this:
+```bash
+$ npm run dev
+```
+
+if you just want to compile, you can do this:
 ```bash
 $ npm run build
 ```
+you'll find the compiled css in dist/hacker.css to do with as you please
 
 
-## Contributing
+## contributing
 
-Feel free to hack around and submit pull requests. Not every style is 100% comp1337, so any assistance is greatly appreciated.
+feel free to hack around and submit pull requests. not every style is 100% comp1337, so any assistance is greatly appreciated.
+
+thanks for stopping by :)
 
 
-## License
+## license
 
-MIT
+mit
