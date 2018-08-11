@@ -7,30 +7,30 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 
 // Hacker Colors
-@hacker-primary-darker:  #1D4327;        /* Primary 1 */
-@hacker-primary-dark:    #1C532A;        /* Primary 2 */
-@hacker-primary:         #195C2B;        /* Main primary */
-@hacker-primary-light:   #21823B;        /* Primary 3 */
-@hacker-primary-lighter: #2BB04E;        /* Primary 4 */
+@hacker-primary-darker:  darken(@hacker-primary-lighter, 40%);        /* Primary 1 */
+@hacker-primary-dark:    darken(@hacker-primary-lighter, 30%);        /* Primary 2 */
+@hacker-primary:         darken(@hacker-primary-lighter, 20%);        /* Main primary */
+@hacker-primary-light:   darken(@hacker-primary-lighter, 10%);        /* Primary 3 */
+@hacker-primary-lighter: #3EE77B;        /* Primary 3 */
 
 @hacker:                 @hacker-primary-lighter;       /* Body text */
-@hacker-bg:              #000000;                     /* Body bg */
+@hacker-bg:              #040304;                     /* Body bg */
 @hacker-box-bg:          lighten(@hacker-bg, 10%);    /* Container elem bg */
 @hacker-box-border:      lighten(@hacker-bg, 20%);    /* Container border */
 
 
 // Bootstrap Colors
-@gray-darker:           #2F4F4F;
-@gray-dark:             #708090;
-@gray:                  #696969;
-@gray-light:            #808080;
-@gray-lighter:          #A9A9A9;
+@gray-darker:           #181417;
+@gray-dark:             #453c44;
+@gray:                  #675b65;
+@gray-light:            #907f8d;
+@gray-lighter:          #b9adb6;
 
 @brand-primary:         @hacker-primary;
-@brand-success:         #25B637;
-@brand-warning:         #C2BC1F;
-@brand-danger:          #AF2C2C;
-@brand-info:            #6793AC;
+@brand-success:         #00faa6;
+@brand-warning:         #ECD650;
+@brand-danger:          #FE6354;
+@brand-info:            #869EE6;
 
 
 // Scaffolding
@@ -44,9 +44,9 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 @padding-large-horizontal:  16px;
 @padding-small-vertical:    5px;
 @padding-small-horizontal:  10px;
-@border-radius-base:        0;
-@border-radius-large:       0;
-@border-radius-small:       0;
+@border-radius-base:        2;
+@border-radius-large:       4;
+@border-radius-small:       1;
 @line-height-large:         1.33;
 @line-height-small:         1.5;
 @component-active-color:    @hacker-bg;
@@ -77,14 +77,14 @@ Palette URL: http://paletton.com/#uid=12U0u0knnfti5bkladVnSlVo6tw
 
 // Code
 @code-color:                @hacker-primary-lighter;
-@code-bg:                   @gray-darker;
+@code-bg:                   @hacker-box-bg;
 
 @kbd-color:                 @hacker-primary-lighter;
-@kbd-bg:                    @gray-darker;
+@kbd-bg:                    @hacker-box-bg;
 
 @pre-color:                 @hacker-primary-lighter;
-@pre-bg:                    @gray-darker;
-@pre-border-color:          #437676;
+@pre-bg:                    @hacker-box-bg;
+@pre-border-color:          @hacker-box-border;
 
 
 // Buttons

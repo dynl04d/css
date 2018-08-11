@@ -105,6 +105,10 @@ tr.active {
   color: @table-active-color;
 }
 
+.jumbotron p {
+  font-weight: 300;
+}
+
 // Remove default active hover to match pagination/tabs behaviour
 .table-hover > tbody > tr {
   > td.active:hover,
@@ -127,6 +131,12 @@ tr.active {
 // Panels
 // Bold headings
 .panel-title {
+  font-weight: bold;
+}
+
+.panel-default .panel-heading,
+.panel-default .panel-title {
+  color: @gray-lighter;
   font-weight: bold;
 }
 

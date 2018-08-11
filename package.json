@@ -10,10 +10,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://git.tilde.team/meta/css"
+        "url": "https://git.tilde.team/team/css"
     },
     "bugs": {
-        "url": "https://git.tilde.team/meta/css/issues"
+        "url": "https://git.tilde.team/team/css/issues"
     },
     "dependencies": {
         "bootstrap": "3.3.7",
